@@ -3,3 +3,94 @@ Ansys Electronics Desktop Version 2024.2.0, Build: 2024-05-23 02:23:50
 Location: C:\Program Files\AnsysEM\v242\Win64\ansysedt.exe
 Non Graphical Mode: No Project??
 Starting Batch Run: 5:45:16 PM  Jan 25, 2026
+Running as user : AD\cli893
+Temp directory: C:\Temp
+Project directory: C:\Users\cli893\Downloads
+The project 'Project5' has been edited and/or solved. Do you want to save the changes?
+-- Message Window --
+      *Global - Messages
+        [info] GRPC server running on port: 50051. 
+        [info] The project 'Project5' has been edited and/or solved. Do you want to save the changes?
+-- Message Window --
+Stopping Batch Run: 5:50:27 PM  Jan 25, 2026
+ 
+Ansys Electronics Desktop Version 2024.2.0, Build: 2024-05-23 02:23:50
+Location: C:\Program Files\AnsysEM\v242\Win64\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 5:51:38 PM  Jan 25, 2026
+Running as user : AD\cli893
+Temp directory: C:\Temp
+Project directory: C:\Users\cli893\Downloads
+The project 'Project5' has been edited and/or solved. Do you want to save the changes?
+-- Message Window --
+      *Global - Messages
+        [info] GRPC server running on port: 50051. 
+        [info] The project 'Project5' has been edited and/or solved. Do you want to save the changes?
+-- Message Window --
+Stopping Batch Run: 5:55:55 PM  Jan 25, 2026
+ 
+Ansys Electronics Desktop Version 2024.2.0, Build: 2024-05-23 02:23:50
+Location: C:\Program Files\AnsysEM\v242\Win64\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 6:01:54 PM  Jan 25, 2026
+Running as user : AD\cli893
+Temp directory: C:\Temp
+Project directory: C:\Users\cli893\Downloads
+The project 'Project5' has been edited and/or solved. Do you want to save the changes?
+-- Message Window --
+      *Global - Messages
+        [info] GRPC server running on port: 50051. 
+        [info] The project 'Project5' has been edited and/or solved. Do you want to save the changes?
+-- Message Window --
+Stopping Batch Run: 6:05:35 PM  Jan 25, 2026
+ 
+Ansys Electronics Desktop Version 2024.2.0, Build: 2024-05-23 02:23:50
+Location: C:\Program Files\AnsysEM\v242\Win64\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 6:05:43 PM  Jan 25, 2026
+Running as user : AD\cli893
+Temp directory: C:\Temp
+Project directory: C:\Users\cli893\Downloads
+The project 'Project5' has been edited and/or solved. Do you want to save the changes?
+-- Message Window --
+      *Global - Messages
+        [info] GRPC server running on port: 50051. 
+        [info] The project 'Project5' has been edited and/or solved. Do you want to save the changes?
+      Project5 (C:/Users/cli893/Downloads/)
+        HFSS_9UT (Terminal Network)
+          [error] Simulation: Project5 : HFSS_9UT cannot be analyzed as it has no setups that may be simulated. (06:06:07 PM  Jan 25, 2026)
+-- Message Window --
+ 
+Ansys Electronics Desktop Version 2024.2.0, Build: 2024-05-23 02:23:50
+Location: C:\Program Files\AnsysEM\v242\Win64\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 10:09:16 AM  Jan 26, 2026
+Running as user : AD\cli893
+A new installation of your Ansys product has been detected.  
+The library directories have been reset to those of the newly installed libraries.  
+To change this, go to Tools/Options/General Options.
+Temp directory: C:\Temp
+Project directory: C:\Users\cli893\OneDrive - Georgia Institute of Technology\Documents\Ansoft
+The project 'Project23' has been edited and/or solved. Do you want to save the changes?
+-- Message Window --
+      *Global - Messages
+        [info] A new installation of your Ansys product has been detected.   The library directories have been reset to those of the newly installed libraries.   To change this, go to Tools/Options/General Options.
+        [info] GRPC server running on port: 50051. 
+        [info] The project 'Project23' has been edited and/or solved. Do you want to save the changes?
+-- Message Window --
+Stopping Batch Run: 10:10:49 AM  Jan 26, 2026
+ 
+Ansys Electronics Desktop Version 2024.2.0, Build: 2024-05-23 02:23:50
+Location: C:\Program Files\AnsysEM\v242\Win64\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 10:10:58 AM  Jan 26, 2026
+Running as user : AD\cli893
+Temp directory: C:\Temp
+Project directory: C:\Users\cli893\OneDrive - Georgia Institute of Technology\Documents\Ansoft
+The project 'Project24' has been edited and/or solved. Do you want to save the changes?
+-- Message Window --
+      *Global - Messages
+        [info] GRPC server running on port: 50051. 
+        [info] The project 'Project24' has been edited and/or solved. Do you want to save the changes?
+-- Message Window --
+Stopping Batch Run: 10:13:25 AM  Jan 26, 2026

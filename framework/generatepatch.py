@@ -1,6 +1,5 @@
 from ansys.aedt.core import Hfss
-
-def generate_patch(hfss): 
+def generate_patch(hfss):
      hfss["ls"] = "10mm"
      hfss["h"] = "0.3mm"
      hfss["w"] =	"3.13475998969076mm"
@@ -59,9 +58,16 @@ def generate_patch(hfss):
      port1 = hfss.lumped_port(
           assignment = "feed",
           reference = "patch",
-          integration_line= hfss.AxisDir.ZPos, #[["0mm","-24.2413045150532mm","-1mm"],["0mm","-24.2413045150532mm",0]]
+          integration_line= [["0mm","-24.2413045150532mm","-1mm"],["0mm","-24.2413045150532mm",0]],
           #[[0, "-l/2 + d - l_inset", "-h"],[0, "-l/2 + d - l_inset", 0]], #hfss.AxisDir.ZPos,
           impedance = 50,
           name = "port1",
           renormalize = False,)
+          
+     return None
+
+def analysis_setup(hfss, sweep):
+     setup = hfss.create_setup(name="MySetup", setup_type = "HFSSDriven", Frequency = "28GHz")
+     setup.props["MaximumPasses"] = 10
+     setup.create_linear_step_sweep(unit="GHz",name="Sweep1",start_frequency=27,stop_frequency=29,step_size = 0.2, sweep_type= sweep,)
      return None
