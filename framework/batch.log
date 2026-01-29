@@ -94,3 +94,344 @@ The project 'Project24' has been edited and/or solved. Do you want to save the c
         [info] The project 'Project24' has been edited and/or solved. Do you want to save the changes?
 -- Message Window --
 Stopping Batch Run: 10:13:25 AM  Jan 26, 2026
+ 
+Ansys Electronics Desktop Version 2024.2.0, Build: 2024-05-23 02:23:50
+Location: C:\Program Files\AnsysEM\v242\Win64\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 10:13:37 AM  Jan 26, 2026
+Running as user : AD\cli893
+Temp directory: C:\Temp
+Project directory: C:\Users\cli893\OneDrive - Georgia Institute of Technology\Documents\Ansoft
+-- Message Window --
+      *Global - Messages
+        [info] GRPC server running on port: 50051. 
+      Project25 (C:/Users/cli893/OneDrive - Georgia Institute of Technology/Documents/Ansoft/)
+        HFSS_CH9 (Terminal Network)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (10:14:01 AM  Jan 26, 2026)
+          [error] Solving adaptive frequency ..., process hf3d error: Matrix solver exception: SOLVER_OUT_OF_MEMORY: please verify RAM Limit (%) setting. Please contact Ansys technical support. (10:25:31 AM  Jan 26, 2026)
+          [warning] Solving adaptive frequency ..., process hf3d: Out of memory (10:25:31 AM  Jan 26, 2026)
+          [warning] Solving adaptive frequency ..., process hf3d: Out of memory (10:25:31 AM  Jan 26, 2026)
+          [error] Solving adaptive frequency ..., process hf3d error: Matrix solver exception: SOLVER_OUT_OF_MEMORY. Please contact Ansys technical support. (10:25:31 AM  Jan 26, 2026)
+          [info] Lambda Refinement Estimates for body air might reach 165,026 tets from 117 tets. Predicting a growth of 1,410.48 %. (10:25:32 AM  Jan 26, 2026)
+          [error] Simulation completed with execution error on server: Local Machine. (10:25:32 AM  Jan 26, 2026)
+          [error] Script macro error: Simulation for Project25 : HFSS_CH9 has failed with execution error.  (10:25:32 AM  Jan 26, 2026)
+          [error] Solving adaptive frequency ..., process hf3d error: Matrix solver exception: SOLVER_OUT_OF_MEMORY: please verify RAM Limit (%) setting. Please contact Ansys technical support. (10:27:11 AM  Jan 26, 2026)
+          [warning] Solving adaptive frequency ..., process hf3d: Out of memory (10:27:11 AM  Jan 26, 2026)
+          [warning] Solving adaptive frequency ..., process hf3d: Out of memory (10:27:11 AM  Jan 26, 2026)
+          [error] Solving adaptive frequency ..., process hf3d error: Matrix solver exception: SOLVER_OUT_OF_MEMORY. Please contact Ansys technical support. (10:27:11 AM  Jan 26, 2026)
+          [error] Simulation completed with execution error on server: Local Machine. (10:27:13 AM  Jan 26, 2026)
+          [error] Solving frequencies ... (Nondomain solver), process hf3d exited with code 259. (10:33:17 AM  Jan 26, 2026)
+          [info] An interpolating frequency sweep with 11 points has been started using HFSS - Solving Distributed. (10:33:39 AM  Jan 26, 2026)
+          [warning] Interpolating frequency sweep did NOT converge. (10:33:39 AM  Jan 26, 2026)
+          [error] Sweep Sweep1 failed (10:33:39 AM  Jan 26, 2026)
+          [error] Simulation completed with execution error on server: Local Machine. (10:33:39 AM  Jan 26, 2026)
+          [info] An interpolating frequency sweep with 21 points has been started using HFSS - Solving Distributed. (10:38:41 AM  Jan 26, 2026)
+          [info] Interpolating frequency sweep complete. Converged. (10:38:41 AM  Jan 26, 2026)
+          [info] Normal completion of simulation on server: Local Machine. (10:38:41 AM  Jan 26, 2026)
+-- Message Window --
+Stopping Batch Run: 10:40:22 AM  Jan 26, 2026
+ 
+Ansys Electronics Desktop Version 2024.2.0, Build: 2024-05-23 02:23:50
+Location: C:\Program Files\AnsysEM\v242\Win64\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 11:13:49 AM  Jan 26, 2026
+Running as user : AD\cli893
+Temp directory: C:\Temp
+Project directory: C:\Users\cli893\OneDrive - Georgia Institute of Technology\Documents\Ansoft
+[warning] Electronics Desktop cannot be closed right now because it is being used by another application, script or extension wizard.
+
+[warning] Electronics Desktop cannot be closed right now because it is being used by another application, script or extension wizard.
+
+The project 'Project26' has been edited and/or solved. Do you want to save the changes?
+-- Message Window --
+      *Global - Messages
+        [info] GRPC server running on port: 50051. 
+        [warning] Electronics Desktop cannot be closed right now because it is being used by another application, script or extension wizard. 
+        [warning] Electronics Desktop cannot be closed right now because it is being used by another application, script or extension wizard.
+        [warning] Electronics Desktop cannot be closed right now because it is being used by another application, script or extension wizard. 
+        [warning] Electronics Desktop cannot be closed right now because it is being used by another application, script or extension wizard.
+        [info] The project 'Project26' has been edited and/or solved. Do you want to save the changes?
+      Project26 (C:/Users/cli893/OneDrive - Georgia Institute of Technology/Documents/Ansoft/)
+        HFSS_KT5 (Terminal Network)
+          [error] Report 'patch28v1' not found. (11:14:14 AM  Jan 26, 2026)
+          [error] Script macro error: Abnormal script termination. (11:14:14 AM  Jan 26, 2026)
+          [error] Simulation was aborted by user on server: Local Machine. (11:14:40 AM  Jan 26, 2026)
+          [error] Script macro error: The simulation for Project26 : HFSS_KT5 has been stopped on user request (11:14:40 AM  Jan 26, 2026)
+-- Message Window --
+Stopping Batch Run: 11:14:42 AM  Jan 26, 2026
+ 
+Ansys Electronics Desktop Version 2024.2.0, Build: 2024-05-23 02:23:50
+Location: C:\Program Files\AnsysEM\v242\Win64\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 11:16:13 AM  Jan 26, 2026
+Running as user : AD\cli893
+Temp directory: C:\Temp
+Project directory: C:\Users\cli893\OneDrive - Georgia Institute of Technology\Documents\Ansoft
+The project 'Project27' has been edited and/or solved. Do you want to save the changes?
+-- Message Window --
+      *Global - Messages
+        [info] GRPC server running on port: 50051. 
+        [info] The project 'Project27' has been edited and/or solved. Do you want to save the changes?
+      Project27 (C:/Users/cli893/OneDrive - Georgia Institute of Technology/Documents/Ansoft/)
+        HFSS_DDA (Terminal Network)
+          [error] Report 'patch28v1' not found. (11:16:35 AM  Jan 26, 2026)
+          [error] Script macro error: Abnormal script termination. (11:16:35 AM  Jan 26, 2026)
+          [info] An interpolating frequency sweep with 21 points has been started using HFSS - Solving Distributed. (11:19:12 AM  Jan 26, 2026)
+          [info] Interpolating frequency sweep complete. Converged. (11:19:12 AM  Jan 26, 2026)
+          [info] Normal completion of simulation on server: Local Machine. (11:19:12 AM  Jan 26, 2026)
+-- Message Window --
+ 
+Ansys Electronics Desktop Version 2024.2.0, Build: 2024-05-23 02:23:50
+Location: C:\Program Files\AnsysEM\v242\Win64\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 5:59:23 PM  Jan 27, 2026
+Running as user : AD\cli893
+Temp directory: C:\Temp
+Project directory: C:\Users\cli893\OneDrive - Georgia Institute of Technology\Documents\Ansoft
+The project 'Project28' has been edited and/or solved. Do you want to save the changes?
+-- Message Window --
+      *Global - Messages
+        [info] GRPC server running on port: 50051. 
+        [info] The project 'Project28' has been edited and/or solved. Do you want to save the changes?
+      Project28 (C:/Users/cli893/OneDrive - Georgia Institute of Technology/Documents/Ansoft/)
+        HFSS_HDG (Terminal Network)
+          [info] An interpolating frequency sweep with 21 points has been started using HFSS - Solving Distributed. (06:02:51 PM  Jan 27, 2026)
+          [info] Interpolating frequency sweep complete. Converged. (06:02:51 PM  Jan 27, 2026)
+          [info] Normal completion of simulation on server: Local Machine. (06:02:51 PM  Jan 27, 2026)
+-- Message Window --
+Stopping Batch Run: 6:05:17 PM  Jan 27, 2026
+ 
+Ansys Electronics Desktop Version 2024.2.0, Build: 2024-05-23 02:23:50
+Location: C:\Program Files\AnsysEM\v242\Win64\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 6:06:31 PM  Jan 27, 2026
+Running as user : AD\cli893
+Temp directory: C:\Temp
+Project directory: C:\Users\cli893\OneDrive - Georgia Institute of Technology\Documents\Ansoft
+[warning] The project selected and all its files will be deleted from the permanent storage medium.
+
+WARNING: All work will be lost.
+
+Click OK to proceed.
+[warning] Some designs have been edited resulting in invalid solution data. This data will be deleted from the saved project.
+Do you want to proceed?
+[warning] The project selected and all its files will be deleted from the permanent storage medium.
+
+WARNING: All work will be lost.
+
+Click OK to proceed.
+-- Message Window --
+      *Global - Messages
+        [info] GRPC server running on port: 50051. 
+        [warning] The project selected and all its files will be deleted from the permanent storage medium.  WARNING: All work will be lost.  Click OK to proceed.
+        [warning] Some designs have been edited resulting in invalid solution data. This data will be deleted from the saved project. Do you want to proceed?
+        [warning] The project selected and all its files will be deleted from the permanent storage medium.  WARNING: All work will be lost.  Click OK to proceed.
+      Project29 (C:/Users/cli893/OneDrive - Georgia Institute of Technology/Documents/Ansoft/)
+        HFSS_XN3 (Terminal Network)
+          [info] An interpolating frequency sweep with 21 points has been started using HFSS - Solving Distributed. (06:10:16 PM  Jan 27, 2026)
+          [info] Interpolating frequency sweep complete. Converged. (06:10:17 PM  Jan 27, 2026)
+          [info] Normal completion of simulation on server: Local Machine. (06:10:17 PM  Jan 27, 2026)
+          [warning] Part Attributes: Name substrate is already used, use name substrate_1. (06:21:06 PM  Jan 27, 2026)
+          [warning] HFSS_XN3: Solutions have been invalidated. Undo to recover. (06:21:06 PM  Jan 27, 2026)
+          [warning] Part Attributes: Name air is already used, use name air_1. (06:21:06 PM  Jan 27, 2026)
+          [warning] Part Attributes: Name patch is already used, use name patch_1. (06:21:06 PM  Jan 27, 2026)
+          [warning] Part Attributes: Name cutout is already used, use name cutout_2. (06:21:06 PM  Jan 27, 2026)
+          [warning] Part Attributes: Name feedline is already used, use name feedline_1. (06:21:07 PM  Jan 27, 2026)
+          [warning] Part Attributes: Name ground is already used, use name ground_1. (06:21:08 PM  Jan 27, 2026)
+          [warning] Part Attributes: Name feed is already used, use name feed_1. (06:21:08 PM  Jan 27, 2026)
+          [error] GetObjectIDByName: Part with name cutout is not found! (06:21:08 PM  Jan 27, 2026)
+          [error] Script macro error: GetObjectIDByName: Part with name cutout is not found! (06:21:08 PM  Jan 27, 2026)
+-- Message Window --
+Stopping Batch Run: 6:21:54 PM  Jan 27, 2026
+ 
+Ansys Electronics Desktop Version 2024.2.0, Build: 2024-05-23 02:23:50
+Location: C:\Program Files\AnsysEM\v242\Win64\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 6:22:05 PM  Jan 27, 2026
+Running as user : AD\cli893
+Temp directory: C:\Temp
+Project directory: C:\Users\cli893\OneDrive - Georgia Institute of Technology\Documents\Ansoft
+The project 'Project30' has been edited and/or solved. Do you want to save the changes?
+-- Message Window --
+      *Global - Messages
+        [info] GRPC server running on port: 50051. 
+        [info] The project 'Project30' has been edited and/or solved. Do you want to save the changes?
+      Project30 (C:/Users/cli893/OneDrive - Georgia Institute of Technology/Documents/Ansoft/)
+        HFSS_M1W (Terminal Network)
+          [info] An interpolating frequency sweep with 21 points has been started using HFSS - Solving Distributed. (06:26:20 PM  Jan 27, 2026)
+          [info] Interpolating frequency sweep complete. Converged. (06:26:20 PM  Jan 27, 2026)
+          [info] Normal completion of simulation on server: Local Machine. (06:26:21 PM  Jan 27, 2026)
+-- Message Window --
+Stopping Batch Run: 6:34:53 PM  Jan 27, 2026
+ 
+Ansys Electronics Desktop Version 2024.2.0, Build: 2024-05-23 02:23:50
+Location: C:\Program Files\AnsysEM\v242\Win64\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 6:35:34 PM  Jan 27, 2026
+Running as user : AD\cli893
+Temp directory: C:\Temp
+Project directory: C:\Users\cli893\OneDrive - Georgia Institute of Technology\Documents\Ansoft
+The project 'Project31' has been edited and/or solved. Do you want to save the changes?
+-- Message Window --
+      *Global - Messages
+        [info] GRPC server running on port: 50051. 
+        [error]   File "C:/Users/cli893/OneDrive - Georgia Institute of Technology/Documents/Ansoft/PersonalLib/Toolkits/Project/Run PyAEDT Script/run_pyaedt_script.py", line ?            ^  SyntaxError: The cloud file provider exited unexpectedly.     ---- While executing script: C:/Users/cli893/OneDrive - Georgia Institute of Technology/Documents/Ansoft/PersonalLib/Toolkits/Project/Run PyAEDT Script/run_pyaedt_script.py
+        [info] The project 'Project31' has been edited and/or solved. Do you want to save the changes?
+      Project31 (C:/Users/cli893/OneDrive - Georgia Institute of Technology/Documents/Ansoft/)
+        HFSS_7FO (Terminal Network)
+          [info] An interpolating frequency sweep with 21 points has been started using HFSS - Solving Distributed. (06:39:45 PM  Jan 27, 2026)
+          [info] Interpolating frequency sweep complete. Converged. (06:39:45 PM  Jan 27, 2026)
+          [info] Normal completion of simulation on server: Local Machine. (06:39:45 PM  Jan 27, 2026)
+          [info] An interpolating frequency sweep with 21 points has been started using HFSS - Solving Distributed. (06:49:26 PM  Jan 27, 2026)
+          [error] Error updating solution state for solution: Sweep1. (06:49:26 PM  Jan 27, 2026)
+          [info] Interpolating frequency sweep complete. Converged. (06:49:26 PM  Jan 27, 2026)
+          [info] Normal completion of simulation on server: Local Machine. (06:49:26 PM  Jan 27, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (06:52:27 PM  Jan 27, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (06:53:57 PM  Jan 27, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (07:06:59 PM  Jan 27, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (07:07:40 PM  Jan 27, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (07:07:41 PM  Jan 27, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (07:14:50 PM  Jan 27, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (07:14:51 PM  Jan 27, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (07:19:34 PM  Jan 27, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (07:19:35 PM  Jan 27, 2026)
+          [error] Report 's11' not found. (07:19:35 PM  Jan 27, 2026)
+          [error] Script macro error: Abnormal script termination. (07:19:35 PM  Jan 27, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (07:20:30 PM  Jan 27, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (07:20:32 PM  Jan 27, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (07:22:33 PM  Jan 27, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (07:22:38 PM  Jan 27, 2026)
+-- Message Window --
+ 
+Ansys Electronics Desktop Version 2024.2.0, Build: 2024-05-23 02:23:50
+Location: C:\Program Files\AnsysEM\v242\Win64\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 11:47:43 AM  Jan 29, 2026
+Running as user : AD\cli893
+A new installation of your Ansys product has been detected.  
+The library directories have been reset to those of the newly installed libraries.  
+To change this, go to Tools/Options/General Options.
+Temp directory: C:\Temp
+Project directory: C:\Users\cli893\OneDrive - Georgia Institute of Technology\Documents\Ansoft
+[warning] The file HFSS_P8I.asol_priv is in use - do you want to wait?
+[warning] The file HFSS_P8I.asol_priv is in use - do you want to wait?
+[warning] The file HFSS_P8I.asol_priv is in use - do you want to wait?
+[warning] The file HFSS_P8I.asol_priv is in use - do you want to wait?
+[warning] The file HFSS_P8I.asol_priv is in use - do you want to wait?
+[warning] The file HFSS_P8I.asol_priv is in use - do you want to wait?
+[warning] The file HFSS_P8I.asol_priv is in use - do you want to wait?
+[warning] The file HFSS_P8I.asol_priv is in use - do you want to wait?
+[warning] The file HFSS_P8I.asol_priv is in use - do you want to wait?
+[warning] The file HFSS_P8I.asol_priv is in use - do you want to wait?
+[warning] The file HFSS_P8I.asol_priv is in use - do you want to wait?
+[warning] The file HFSS_P8I.asol_priv is in use - do you want to wait?
+[warning] The file HFSS_P8I.asol_priv is in use - do you want to wait?
+[warning] The file HFSS_P8I.asol_priv is in use - do you want to wait?
+-- Message Window --
+      *Global - Messages
+        [info] A new installation of your Ansys product has been detected.   The library directories have been reset to those of the newly installed libraries.   To change this, go to Tools/Options/General Options.
+        [info] GRPC server running on port: 50051. 
+        [warning] The file HFSS_P8I.asol_priv is in use - do you want to wait?
+        [warning] The file HFSS_P8I.asol_priv is in use - do you want to wait?
+        [warning] The file HFSS_P8I.asol_priv is in use - do you want to wait?
+        [warning] The file HFSS_P8I.asol_priv is in use - do you want to wait?
+        [warning] The file HFSS_P8I.asol_priv is in use - do you want to wait?
+        [warning] The file HFSS_P8I.asol_priv is in use - do you want to wait?
+        [warning] The file HFSS_P8I.asol_priv is in use - do you want to wait?
+        [warning] The file HFSS_P8I.asol_priv is in use - do you want to wait?
+        [warning] The file HFSS_P8I.asol_priv is in use - do you want to wait?
+        [warning] The file HFSS_P8I.asol_priv is in use - do you want to wait?
+        [warning] The file HFSS_P8I.asol_priv is in use - do you want to wait?
+        [warning] The file HFSS_P8I.asol_priv is in use - do you want to wait?
+        [warning] The file HFSS_P8I.asol_priv is in use - do you want to wait?
+        [warning] The file HFSS_P8I.asol_priv is in use - do you want to wait?
+      Project32 (C:/Users/cli893/OneDrive - Georgia Institute of Technology/Documents/Ansoft/)
+        HFSS_P8I (Terminal Network)
+          [info] Accurate transparency rendering is disabled to avoid slow rendering performance. (11:48:18 AM  Jan 29, 2026)
+          [info] An interpolating frequency sweep with 21 points has been started using HFSS - Solving Distributed. (11:53:22 AM  Jan 29, 2026)
+          [info] Interpolating frequency sweep complete. Converged. (11:53:22 AM  Jan 29, 2026)
+          [info] Normal completion of simulation on server: Local Machine. (11:53:22 AM  Jan 29, 2026)
+          [error] Report 'patch28' not found. (11:56:27 AM  Jan 29, 2026)
+          [error] Script macro error: Abnormal script termination. (11:56:27 AM  Jan 29, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (11:58:16 AM  Jan 29, 2026)
+          [error] Report 'patch' not found. (11:58:17 AM  Jan 29, 2026)
+          [error] Script macro error: Abnormal script termination. (11:58:17 AM  Jan 29, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (11:59:25 AM  Jan 29, 2026)
+          [warning] Report Name 'patch' is already in use or invalid. Creating report with name 'patch1'. (11:59:36 AM  Jan 29, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (11:59:36 AM  Jan 29, 2026)
+          [warning] Report Name 'patch' is already in use or invalid. Creating report with name 'patch2'. (12:01:54 PM  Jan 29, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (12:01:54 PM  Jan 29, 2026)
+          [info] Touchstone export: Writing to "C:/Users/cli893/OneDrive - Georgia Institute of Technology/Documents/Ansoft/Project32.pyaedt/HFSS_P8I/MySetup_LastAdaptive-Infinite Sphere1/HFSS_P8I/LastAdaptive_DV28.s1p" (12:14:00 PM  Jan 29, 2026)
+          [warning] The trace 'db(S11)' refers to a solution that has been either deleted or is no longer applicable for trace's report type. The trace has been deleted as a result.  (02:28:09 PM  Jan 29, 2026)
+          [warning] The report 'Plot_65F5OQ' was deleted because its traces were invalidated due to the edit. (02:28:09 PM  Jan 29, 2026)
+          [warning] The trace 'db(S11)' refers to a solution that has been either deleted or is no longer applicable for trace's report type. The trace has been deleted as a result.  (02:28:09 PM  Jan 29, 2026)
+          [warning] The report 'patch' was deleted because its traces were invalidated due to the edit. (02:28:09 PM  Jan 29, 2026)
+          [warning] The trace 'db(S11)' refers to a solution that has been either deleted or is no longer applicable for trace's report type. The trace has been deleted as a result.  (02:28:09 PM  Jan 29, 2026)
+          [warning] The report 'patch1' was deleted because its traces were invalidated due to the edit. (02:28:09 PM  Jan 29, 2026)
+          [warning] The trace 'db(S11)' refers to a solution that has been either deleted or is no longer applicable for trace's report type. The trace has been deleted as a result.  (02:28:09 PM  Jan 29, 2026)
+          [warning] The report 'patch2' was deleted because its traces were invalidated due to the edit. (02:28:09 PM  Jan 29, 2026)
+          [warning] The trace 'dB(GainPhi)' refers to a solution that has been either deleted or is no longer applicable for trace's report type. The trace has been deleted as a result.  (02:28:10 PM  Jan 29, 2026)
+          [warning] The report 'Gain Plot 1' was deleted because its traces were invalidated due to the edit. (02:28:10 PM  Jan 29, 2026)
+          [warning] The trace 'dB(GainTheta)' refers to a solution that has been either deleted or is no longer applicable for trace's report type. The trace has been deleted as a result.  (02:28:10 PM  Jan 29, 2026)
+          [warning] The report 'Gain Plot 2' was deleted because its traces were invalidated due to the edit. (02:28:10 PM  Jan 29, 2026)
+          [warning] HFSS_P8I: Solutions have been invalidated. Undo to recover. (02:28:10 PM  Jan 29, 2026)
+          [error] Script macro error: Duplicate setup name: 'Infinite Sphere1' (02:29:21 PM  Jan 29, 2026)
+          [error] Error updating solution state for solution: LastAdaptive. (02:29:39 PM  Jan 29, 2026)
+          [error] Simulation completed with execution error on server: Local Machine. (02:29:40 PM  Jan 29, 2026)
+          [error] Script macro error: Simulation for Project32 : HFSS_P8I has failed with execution error.  (02:29:41 PM  Jan 29, 2026)
+          [error] Script macro error: No trace data for quantity: mag(rETheta) (02:30:05 PM  Jan 29, 2026)
+          [warning] The variable  'Distance' doesn't have an associated sweep and is excluded from the definition of trace. (02:30:10 PM  Jan 29, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (02:30:10 PM  Jan 29, 2026)
+          [error] Simulation completed with execution error on server: Local Machine. (02:34:07 PM  Jan 29, 2026)
+          [error] Error updating solution state for solution: LastAdaptive. (02:34:19 PM  Jan 29, 2026)
+          [error] Simulation completed with execution error on server: Local Machine. (02:34:19 PM  Jan 29, 2026)
+          [error] Script macro error: Simulation for Project32 : HFSS_P8I has failed with execution error.  (02:34:19 PM  Jan 29, 2026)
+          [warning] Report Name 'patch28' is already in use or invalid. Creating report with name 'patch29'. (02:34:22 PM  Jan 29, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (02:34:22 PM  Jan 29, 2026)
+          [warning] Report patch28 has no data for export. (02:34:23 PM  Jan 29, 2026)
+          [warning] The trace 'db(GainPhi)' refers to a solution that has been either deleted or is no longer applicable for trace's report type. The trace has been deleted as a result.  (02:36:49 PM  Jan 29, 2026)
+          [warning] The report 'patch29' was deleted because its traces were invalidated due to the edit. (02:36:49 PM  Jan 29, 2026)
+          [warning] HFSS_P8I: Solutions have been invalidated. Undo to recover. (02:36:49 PM  Jan 29, 2026)
+          [error] Error updating solution state for solution: LastAdaptive. (02:37:25 PM  Jan 29, 2026)
+          [error] Simulation completed with execution error on server: Local Machine. (02:37:25 PM  Jan 29, 2026)
+          [error] Script macro error: Simulation for Project32 : HFSS_P8I has failed with execution error.  (02:37:25 PM  Jan 29, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (02:37:27 PM  Jan 29, 2026)
+          [warning] Report patch28 has no data for export. (02:37:28 PM  Jan 29, 2026)
+          [warning] The trace 'db(GainPhi)' refers to a solution that has been either deleted or is no longer applicable for trace's report type. The trace has been deleted as a result.  (02:39:03 PM  Jan 29, 2026)
+          [warning] The report 'patch28' was deleted because its traces were invalidated due to the edit. (02:39:04 PM  Jan 29, 2026)
+          [warning] The trace 'dB(GainPhi)' refers to a solution that has been either deleted or is no longer applicable for trace's report type. The trace has been deleted as a result.  (02:39:04 PM  Jan 29, 2026)
+          [warning] The report 'Gain Plot 1' was deleted because its traces were invalidated due to the edit. (02:39:04 PM  Jan 29, 2026)
+          [warning] The trace 'dB(St(port1_T1,port1_T1))' refers to a solution that has been either deleted or is no longer applicable for trace's report type. The trace has been deleted as a result.  (02:39:04 PM  Jan 29, 2026)
+          [warning] The report 'Terminal S Parameter Plot 1' was deleted because its traces were invalidated due to the edit. (02:39:04 PM  Jan 29, 2026)
+          [warning] HFSS_P8I: Solutions have been invalidated. Undo to recover. (02:39:04 PM  Jan 29, 2026)
+          [error] Solution Setup: No solution setups have been created. (02:39:11 PM  Jan 29, 2026)
+          [error] Error updating solution state for solution: LastAdaptive. (02:39:39 PM  Jan 29, 2026)
+          [error] Simulation completed with execution error on server: Local Machine. (02:39:39 PM  Jan 29, 2026)
+          [error] Script macro error: Simulation for Project32 : HFSS_P8I has failed with execution error.  (02:39:39 PM  Jan 29, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (02:39:41 PM  Jan 29, 2026)
+          [warning] Report patch28 has no data for export. (02:39:42 PM  Jan 29, 2026)
+          [error] Simulation completed with execution error on server: Local Machine. (02:47:15 PM  Jan 29, 2026)
+        [warning] Failed to obtain access to 'HFSS_P8I.asol_priv' because another application did not release its lock. It may be necessary to delete the file 'C:/Users/cli893/OneDrive - Georgia Institute of Technology/Documents/Ansoft/Project32.aedtresults/.HFSS_P8I.asol_priv.semaphore' or terminate the offending application. (02:33:42 PM  Jan 29, 2026)
+        [warning] Failed to obtain access to 'HFSS_P8I.asol_priv' because another application did not release its lock. It may be necessary to delete the file 'C:/Users/cli893/OneDrive - Georgia Institute of Technology/Documents/Ansoft/Project32.aedtresults/.HFSS_P8I.asol_priv.semaphore' or terminate the offending application. (02:33:42 PM  Jan 29, 2026)
+        [warning] Failed to obtain access to 'HFSS_P8I.asol_priv' because another application did not release its lock. It may be necessary to delete the file 'C:/Users/cli893/OneDrive - Georgia Institute of Technology/Documents/Ansoft/Project32.aedtresults/.HFSS_P8I.asol_priv.semaphore' or terminate the offending application. (02:33:47 PM  Jan 29, 2026)
+        [warning] Failed to obtain access to 'HFSS_P8I.asol_priv' because another application did not release its lock. It may be necessary to delete the file 'C:/Users/cli893/OneDrive - Georgia Institute of Technology/Documents/Ansoft/Project32.aedtresults/.HFSS_P8I.asol_priv.semaphore' or terminate the offending application. (02:33:47 PM  Jan 29, 2026)
+        [warning] Failed to obtain access to 'HFSS_P8I.asol_priv' because another application did not release its lock. It may be necessary to delete the file 'C:/Users/cli893/OneDrive - Georgia Institute of Technology/Documents/Ansoft/Project32.aedtresults/.HFSS_P8I.asol_priv.semaphore' or terminate the offending application. (02:34:03 PM  Jan 29, 2026)
+        [warning] Failed to obtain access to 'HFSS_P8I.asol_priv' because another application did not release its lock. It may be necessary to delete the file 'C:/Users/cli893/OneDrive - Georgia Institute of Technology/Documents/Ansoft/Project32.aedtresults/.HFSS_P8I.asol_priv.semaphore' or terminate the offending application. (02:34:03 PM  Jan 29, 2026)
+        [warning] Failed to obtain access to 'HFSS_P8I.asol_priv' because another application did not release its lock. It may be necessary to delete the file 'C:/Users/cli893/OneDrive - Georgia Institute of Technology/Documents/Ansoft/Project32.aedtresults/.HFSS_P8I.asol_priv.semaphore' or terminate the offending application. (02:37:10 PM  Jan 29, 2026)
+        [warning] Failed to obtain access to 'HFSS_P8I.asol_priv' because another application did not release its lock. It may be necessary to delete the file 'C:/Users/cli893/OneDrive - Georgia Institute of Technology/Documents/Ansoft/Project32.aedtresults/.HFSS_P8I.asol_priv.semaphore' or terminate the offending application. (02:37:10 PM  Jan 29, 2026)
+        [warning] Failed to obtain access to 'HFSS_P8I.asol_priv' because another application did not release its lock. It may be necessary to delete the file 'C:/Users/cli893/OneDrive - Georgia Institute of Technology/Documents/Ansoft/Project32.aedtresults/.HFSS_P8I.asol_priv.semaphore' or terminate the offending application. (02:39:27 PM  Jan 29, 2026)
+        [warning] Failed to obtain access to 'HFSS_P8I.asol_priv' because another application did not release its lock. It may be necessary to delete the file 'C:/Users/cli893/OneDrive - Georgia Institute of Technology/Documents/Ansoft/Project32.aedtresults/.HFSS_P8I.asol_priv.semaphore' or terminate the offending application. (02:39:27 PM  Jan 29, 2026)
+        [warning] Failed to obtain access to 'HFSS_P8I.asol_priv' because another application did not release its lock. It may be necessary to delete the file 'C:/Users/cli893/OneDrive - Georgia Institute of Technology/Documents/Ansoft/Project32.aedtresults/.HFSS_P8I.asol_priv.semaphore' or terminate the offending application. (02:47:10 PM  Jan 29, 2026)
+        [warning] Failed to obtain access to 'HFSS_P8I.asol_priv' because another application did not release its lock. It may be necessary to delete the file 'C:/Users/cli893/OneDrive - Georgia Institute of Technology/Documents/Ansoft/Project32.aedtresults/.HFSS_P8I.asol_priv.semaphore' or terminate the offending application. (02:47:10 PM  Jan 29, 2026)
+        [warning] Failed to obtain access to 'HFSS_P8I.asol_priv' because another application did not release its lock. It may be necessary to delete the file 'C:/Users/cli893/OneDrive - Georgia Institute of Technology/Documents/Ansoft/Project32.aedtresults/.HFSS_P8I.asol_priv.semaphore' or terminate the offending application. (02:47:24 PM  Jan 29, 2026)
+        [warning] Failed to obtain access to 'HFSS_P8I.asol_priv' because another application did not release its lock. It may be necessary to delete the file 'C:/Users/cli893/OneDrive - Georgia Institute of Technology/Documents/Ansoft/Project32.aedtresults/.HFSS_P8I.asol_priv.semaphore' or terminate the offending application. (02:47:24 PM  Jan 29, 2026)
+-- Message Window --
+Stopping Batch Run: 2:47:33 PM  Jan 29, 2026
+ 
+Ansys Electronics Desktop Version 2024.2.0, Build: 2024-05-23 02:23:50
+Location: C:\Program Files\AnsysEM\v242\Win64\ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 2:49:41 PM  Jan 29, 2026
+Running as user : AD\cli893
+Temp directory: C:\Temp
+Project directory: C:\Users\cli893\OneDrive - Georgia Institute of Technology\Documents\Ansoft

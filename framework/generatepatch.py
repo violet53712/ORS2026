@@ -4,9 +4,9 @@ def generate_patch(hfss):
      hfss["h"] = "0.3mm"
      hfss["w"] =	"3.13475998969076mm"
      hfss["l"] =	"2.42444930665735mm"	 
-     hfss["w_s"] = "50mm"	 
-     hfss["l_s"]	= "50mm"
-     hfss["h_s"]	= "50mm"
+     hfss["w_s"] = "20mm"	 
+     hfss["l_s"]	= "20mm"
+     hfss["h_s"]	= "20mm"
      hfss["dw"] = "0.847852902077836mm"	 
      hfss["d"] = "0.31872271467571mm"	 
      hfss["w_inset"]	= "0.344836594189614mm"	 
@@ -18,8 +18,8 @@ def generate_patch(hfss):
      d = 0.04
      hfss.modeler.model_units = length_units
 
-     box = hfss.modeler.create_box(origin=["-w_s/10" ,"-l_s/10" , "dist"],
-                                   sizes=["w_s/5", "l_s/5", "-h"],
+     box = hfss.modeler.create_box(origin=["-w_s/2" ,"-l_s/2" , "dist"],
+                                   sizes=["w_s", "l_s", "-h"],
                                    name="substrate",
                                    material="FR4_epoxy")
      air = hfss.modeler.create_box(origin=["-w_s" ,"-l_s" ,"-h_s/2 + dist"],
@@ -58,7 +58,7 @@ def generate_patch(hfss):
      port1 = hfss.lumped_port(
           assignment = "feed",
           reference = "patch",
-          integration_line= [["0mm","-24.2413045150532mm","-1mm"],["0mm","-24.2413045150532mm",0]],
+          #integration_line= [["0mm","-24.2413045150532mm","-1mm"],["0mm","-24.2413045150532mm",0]],
           #[[0, "-l/2 + d - l_inset", "-h"],[0, "-l/2 + d - l_inset", 0]], #hfss.AxisDir.ZPos,
           impedance = 50,
           name = "port1",
@@ -66,8 +66,10 @@ def generate_patch(hfss):
           
      return None
 
-def analysis_setup(hfss, sweep):
+def analysis_setup(hfss, sweep, farfield):
      setup = hfss.create_setup(name="MySetup", setup_type = "HFSSDriven", Frequency = "28GHz")
-     setup.props["MaximumPasses"] = 10
-     setup.create_linear_step_sweep(unit="GHz",name="Sweep1",start_frequency=27,stop_frequency=29,step_size = 0.2, sweep_type= sweep,)
+     setup.props["MaximumPasses"] = 20
+     setup.create_linear_step_sweep(unit="GHz",name="Sweep1",start_frequency=27,stop_frequency=29,step_size = 0.1, sweep_type= sweep,)
+     if (farfield):
+          hfss.insert_infinite_sphere(definition="Theta-Phi", x_start=0, x_stop=0, x_step=0, y_start=-180, y_stop=180, y_step=2, units="deg", name="Infinite Sphere1")
      return None

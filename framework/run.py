@@ -2,6 +2,7 @@ from ansys.aedt.core import Hfss
 from ansys.aedt.core import Desktop
 from ansys.aedt.core import settings
 import generatepatch
+import extraction
 
 settings.use_grpc_api = True
 version = "2024.2"
@@ -18,11 +19,14 @@ desktop = Desktop(
 
 hfss = Hfss()
 
-generatepatch.generate_patch(hfss)
+#generatepatch.generate_patch(hfss)
 
-generatepatch.analysis_setup(hfss, "Interpolating")
+#generatepatch.analysis_setup(hfss, "Interpolating", False)
+#generatepatch.analysis_setup(hfss, "Discrete", True)
+#hfss.analyze()
 
-hfss.post.create_report("db(S11)")
+#r1 = extraction.extract_s11(hfss)
+r2 = extraction.extract_gain(hfss)
 
 
-hfss.analyze()
+
