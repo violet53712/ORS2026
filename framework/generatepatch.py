@@ -63,13 +63,29 @@ def generate_patch(hfss):
           impedance = 50,
           name = "port1",
           renormalize = False,)
+     
           
      return None
 
-def analysis_setup(hfss, sweep, farfield):
-     setup = hfss.create_setup(name="MySetup", setup_type = "HFSSDriven", Frequency = "28GHz")
-     setup.props["MaximumPasses"] = 20
-     setup.create_linear_step_sweep(unit="GHz",name="Sweep1",start_frequency=27,stop_frequency=29,step_size = 0.1, sweep_type= sweep,)
+def analysis_setup(hfss, farfield, setup):
      if (farfield):
-          hfss.insert_infinite_sphere(definition="Theta-Phi", x_start=0, x_stop=0, x_step=0, y_start=-180, y_stop=180, y_step=2, units="deg", name="Infinite Sphere1")
+          setup.create_linear_step_sweep(unit="GHz",name="Sweep1",start_frequency=27,
+                                    stop_frequency=29,step_size = 1, sweep_type= "Discrete",)
+          hfss.insert_infinite_sphere(definition="Theta-Phi", x_start=-180, x_stop=180, x_step=2, 
+                                      y_start=0, y_stop=0, y_step=0, units="deg", name="Infinite Sphere1")
+     else:
+          setup.create_linear_step_sweep(unit="GHz",name="Sweep1",start_frequency=27,
+                                    stop_frequency=29,step_size = 0.2, sweep_type= "Interpolating",)
      return None
+
+def optimization_s11_setup(hfss, var):
+     opt = hfss.optimizations
+     opt.add(calculation = "dB(S(1,1))", variables = var, ranges = {"Freq": ("27.9GHz","28.1GHz")}, condition = "<=", goal_value = "-20")
+     return None
+
+def optimization_gain_setup(hfss, var):
+     opt1 = hfss.optimizations
+     opt1.add(calculation = "dB(RealizedGainPhi)", variables = var, ranges = {"Theta": (-2,2), "Phi": (0,0), "Freq": ("28GHz", "28GHz")}, condition = ">=", goal_value = "6", context = "Infinite Sphere1", report_type = "Far Fields")
+     return None
+
+#["dw [mm]", "w_inset [mm]","d []", "w [mm]"]

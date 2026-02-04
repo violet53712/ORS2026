@@ -3,23 +3,33 @@ from ansys.aedt.core import Hfss
 def extract_s11(hfss):
     # Extract S-parameters
 
-    report1 = hfss.post.create_report(expressions = "db(S11)", variations = None, report_category = "Terminal Solution Data", plot_type = "Rectangular Plot", plot_name = "patch28")
-    hfss.post.export_report_to_file( output_dir = "C:\\Users\\cli893\\Downloads\\ORS2026\\ml", plot_name = "patch28", extension = ".csv")
+# variations = hfss.available_variations.nominal_values
+# variations["Freq"] = [center_freq]
+# variations["Theta"] = ["All"]
+# variations["Phi"] = ["All"]
+    report1 = hfss.post.create_report(expressions = "db(S11)", 
+                                      variations = {"d": ["All"], "dw": ["All"], "w_inset": ["All"], "w": ["All"]}, 
+                                      report_category = "Terminal Solution Data", 
+                                      plot_type = "Rectangular Plot", 
+                                      plot_name = "patch28s11")
+    hfss.post.export_report_to_file( output_dir = "C:\\Users\\cli893\\Downloads\\ORS2026\\ml",
+                                     plot_name = "patch28s11",
+                                       extension = ".csv")
     print("Results extracted and saved to CSV.")
     return report1
 
 def extract_gain(hfss):
-    # Extract S-parameters
-    # ffdata = hfss.get_antenna_data(setup=hfss.nominal_adaptive, sphere="Infinite Sphere1")
-    # reportf = hfss.post.create_report(expressions = "db(GainPhi)", variations = None, report_category = "Far Fields Report", plot_type = "Rectangular Plot", plot_name = "patch28")
-    # ffdata.farfield_data.plot_cut(
-    # quantity="RealizedGain_Theta",
-    # primary_sweep="theta",
-    # title="co",
-    # quantity_format="dB10",
-    # is_polar = True,)
-    report2 = hfss.post.create_report(expressions = "db(GainPhi)", primary_sweep_variable = "Theta", report_category = "Far Fields", plot_type = "Radiation Pattern", plot_name = "patch28")
-    hfss.post.export_report_to_file( output_dir = "C:\\Users\\cli893\\Downloads\\ORS2026\\ml", plot_name = "patch28", extension = ".csv")
+    report2 = hfss.post.create_report(expressions = "db(RealizedGainPhi)", 
+                                      variations = {"d": ["All"], "dw": ["All"], "w_inset": ["All"], "w": ["All"]}, 
+                                      primary_sweep_variable = "Theta", 
+                                      report_category = "Far Fields", 
+                                      plot_type = "Radiation Pattern", 
+                                      context = "Infinite Sphere1",
+                                      plot_name = "patch28gain2")
+    print(report2.plot_name)
+    hfss.post.export_report_to_file( output_dir = "C:\\Users\\cli893\\Downloads\\ORS2026\\ml",
+                                     plot_name = report2.plot_name, 
+                                     extension = ".csv")
     print("Results extracted and saved to CSV.")
     return report2
 

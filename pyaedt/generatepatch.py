@@ -1,4 +1,18 @@
 from ansys.aedt.core import Hfss
+from ansys.aedt.core import Desktop
+from ansys.aedt.core import settings
+
+settings.use_grpc_api = True
+version = "2024.2"
+print("Loading the PyAEDT Console.")
+
+desktop = Desktop(
+    specified_version=version,
+    new_desktop_session=False,
+    non_graphical=False,
+    close_on_exit=False,
+    student_version=False,
+)
 
 hfss = Hfss()
 hfss["ls"] = "10mm"
@@ -59,7 +73,7 @@ rad = hfss.assign_radiation_boundary_to_objects("air")
 port1 = hfss.lumped_port(
      assignment = "feed",
      reference = "patch",
-     integration_line= hfss.AxisDir.ZPos, #[["0mm","-24.2413045150532mm","-1mm"],["0mm","-24.2413045150532mm",0]]
+     integration_line= [["0mm","-24.2413045150532mm","-1mm"],["0mm","-24.2413045150532mm",0]],
      #[[0, "-l/2 + d - l_inset", "-h"],[0, "-l/2 + d - l_inset", 0]], #hfss.AxisDir.ZPos,
      impedance = 50,
      name = "port1",
