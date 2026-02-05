@@ -1,12 +1,13 @@
+import math
 from ansys.aedt.core import Hfss
 def generate_patch(hfss):
      hfss["ls"] = "10mm"
      hfss["h"] = "0.3mm"
      hfss["w"] =	"3.13475998969076mm"
      hfss["l"] =	"2.42444930665735mm"	 
-     hfss["w_s"] = "20mm"	 
-     hfss["l_s"]	= "20mm"
-     hfss["h_s"]	= "20mm"
+     hfss["w_s"] = "50mm"	 
+     hfss["l_s"]	= "50mm"
+     hfss["h_s"]	= "50mm"
      hfss["dw"] = "0.847852902077836mm"	 
      hfss["d"] = "0.31872271467571mm"	 
      hfss["w_inset"]	= "0.344836594189614mm"	 
@@ -18,14 +19,14 @@ def generate_patch(hfss):
      d = 0.04
      hfss.modeler.model_units = length_units
 
-     box = hfss.modeler.create_box(origin=["-w_s/2" ,"-l_s/2" , "dist"],
-                                   sizes=["w_s", "l_s", "-h"],
+     box = hfss.modeler.create_box(origin=["-w_s/10" ,"-l_s/10" , "dist"],
+                                   sizes=["w_s/5", "l_s/5", "-h"],
                                    name="substrate",
                                    material="FR4_epoxy")
-     air = hfss.modeler.create_box(origin=["-w_s" ,"-l_s" ,"-h_s/2 + dist"],
-                                   sizes=["2*w_s", "2*l_s", "2*h_s"],
-                                   name="air",
-                                   material="vacuum")
+     #air = hfss.modeler.create_box(origin=["-w_s" ,"-l_s" ,"-h_s/2 + dist"],
+     #                              sizes=["2*w_s", "2*l_s", "2*h_s"],
+     #                              name="air",
+     #                              material="vacuum")
      patch = hfss.modeler.create_rectangle(orientation = "XY",
                                         origin = ["-w/2" ,"-l/2" ,"dist"],
                                         sizes = ["w", "l"],
@@ -53,7 +54,7 @@ def generate_patch(hfss):
 
      perfE1 = hfss.assign_perfecte_to_sheets("patch")
      perfE2 = hfss.assign_perfecte_to_sheets("ground")
-     rad = hfss.assign_radiation_boundary_to_objects("air")
+     #rad = hfss.assign_radiation_boundary_to_objects("air")
 
      port1 = hfss.lumped_port(
           assignment = "feed",
@@ -88,4 +89,63 @@ def optimization_gain_setup(hfss, var):
      opt1.add(calculation = "dB(RealizedGainPhi)", variables = var, ranges = {"Theta": (-2,2), "Phi": (0,0), "Freq": ("28GHz", "28GHz")}, condition = ">=", goal_value = "6", context = "Infinite Sphere1", report_type = "Far Fields")
      return None
 
-#["dw [mm]", "w_inset [mm]","d []", "w [mm]"]
+def generate_lens(hfss):
+     length_units = "m"
+     d = 0.04
+     w = 3/280
+     for n in range (1, 17):
+          r = math.sqrt((n*w/4)**2+(n*d*w/4))
+          hfss["r"+str(n)] = r
+
+     rings = []
+     delete = []
+     k = math.sqrt(3.1496)
+     tf = w/(4*(k-1))
+     for i in range(0, 4):
+          hfss["h" + str(i)] = i*tf + 0.001
+
+
+     rings.append(hfss.modeler.create_cylinder(orientation = "XY", 
+                                             origin = (0, 0, 0), 
+                                             radius = "r"+str(1), 
+                                             height = ("h" + str(3)), 
+                                             name = "h" + str(1), 
+                                             material="Plastic, PLA"))
+     for n in range(2, 17):
+          i = (16-n)%4
+          rings.append(hfss.modeler.create_cylinder(orientation = "XY", 
+                                                  origin = (0, 0, 0), 
+                                                  radius = "r"+str(n), 
+                                                  height = ("h" + str(i)), 
+                                                  name = "h" + str(n), 
+                                                  material="Plastic, PLA",
+                                                  num_sides= 20))
+          delete.append(hfss.modeler.create_cylinder(orientation = "XY", 
+                                                  origin = (0, 0, 0), 
+                                                  radius = "r"+str(n-1), 
+                                                  height = ("h" + str(i)), 
+                                                  name = "delete" + str(n), 
+                                                  num_sides=20))
+          rings[n-1].subtract(delete[n-2])
+          hfss.modeler["delete"+str(n)].delete()
+     for n in range(1, 16):
+          rings[0].unite(rings[n])
+     print(len(rings))
+     #["dw [mm]", "w_inset [mm]","d []", "w [mm]"]
+
+def generate_febi(hfss):
+     c = 299792458
+     f = 28e9
+     wav = c / f * 100
+     hfss["wav"] = str(wav) + "mm"
+     lens_febi = hfss.modeler.create_box(origin=["-r16-wav" ,"-r16-wav" ,"-wav"],
+                                   sizes=["2*(r16+wav)", "2*(r16+wav)", "h3+2*wav"],
+                                   name="lens_febi",
+                                   material="vacuum")
+     
+     patch_febi = hfss.modeler.create_box(origin=["-w_s-wav" ,"-l_s-wav" ,"-h-wav+dist"],
+                                   sizes=["2*(w_s+wav)", "2*(l_s+wav)", "h+2*wav"],
+                                   name="patch_febi",
+                                   material="vacuum")
+     hfss.assign_febi("lens_febi")
+     hfss.assign_febi("patch_febi")

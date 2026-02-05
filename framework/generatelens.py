@@ -20,7 +20,8 @@ rings.append(hfss.modeler.create_cylinder(orientation = "XY",
                                           radius = "r"+str(1), 
                                           height = ("h" + str(3)), 
                                           name = "h" + str(1), 
-                                          material="Plastic, PLA"))
+                                          material="Plastic, PLA", 
+                                          num_sides = 20))
 for n in range(2, 17):
     i = (16-n)%4
     rings.append(hfss.modeler.create_cylinder(orientation = "XY", 
@@ -38,3 +39,5 @@ for n in range(2, 17):
                                                num_sides=20))
     rings[n-1].subtract(delete[n-2])
     hfss.modeler["delete"+str(n)].delete()
+for n in range(1, 16):
+    rings[0].unite(rings[n])

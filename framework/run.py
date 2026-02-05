@@ -17,21 +17,24 @@ desktop = Desktop(
 )
 
 
-hfss = Hfss()
+hfss = Hfss(solution_type="HFSS with Hybrid and Arrays")
+hfss.hybrid = True
 
-#generatepatch.generate_patch(hfss)
-#setup = hfss.create_setup(name="MySetup", setup_type = "HFSSDriven", Frequency = "28GHz")
-#setup.props["MaximumPasses"] = 20
+generatepatch.generate_patch(hfss)
+generatepatch.generate_lens(hfss)
+generatepatch.generate_febi(hfss)
+setup = hfss.create_setup(name="MySetup", setup_type = "HFSSDriven", Frequency = "28GHz")
+setup.props["MaximumPasses"] = 20
 
 #generatepatch.analysis_setup(hfss, False, setup)
-#generatepatch.analysis_setup(hfss, True, setup)
+generatepatch.analysis_setup(hfss, True, setup)
 
 #generatepatch.optimization_s11_setup(hfss,["dw", "w_inset","d", "w"])
-generatepatch.optimization_gain_setup(hfss,["dw", "w_inset","d", "w"])
+#generatepatch.optimization_gain_setup(hfss,["dw", "w_inset","d", "w"])
 hfss.analyze()
 
 #r1 = extraction.extract_s11(hfss)
-r2 = extraction.extract_gain(hfss)
+#r2 = extraction.extract_gain(hfss)
 
 
 
